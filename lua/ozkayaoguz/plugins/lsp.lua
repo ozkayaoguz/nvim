@@ -25,12 +25,12 @@ return {
 				vim.keymap.set("n", "gI", function() builtin.lsp_implementations() end, opts)
 				vim.keymap.set("n", "<leader>D", function() builtin.lsp_type_definitions() end, opts)
 				vim.keymap.set("n", "<leader>ds", function() builtin.lsp_document_symbols() end, opts)
+                vim.keymap.set("n", "<leader>df", function() vim.lsp.buf.format() end, opts)
 				vim.keymap.set("n", "<leader>ws", function() builtin.lsp_dynamic_workspace_symbols() end, opts)
                 vim.keymap.set("n", "<leader>wd", function() builtin.diagnostics() end, opts)
 				vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, opts)
                 vim.keymap.set("n", "<leader>a", function() vim.lsp.buf.code_action() end, opts)
                 vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-                vim.keymap.set("n", "<leader>fd", function() vim.lsp.buf.format() end, opts)
 			end,
 		})
 

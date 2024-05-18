@@ -1,6 +1,7 @@
 vim.api.nvim_exec("language en_US", true)
 
 vim.opt.mouse = ""
+vim.opt.ignorecase = true
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -29,4 +30,4 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
---vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
