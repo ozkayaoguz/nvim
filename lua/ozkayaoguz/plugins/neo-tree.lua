@@ -45,7 +45,7 @@ return {
             },
         })
 
-        vim.keymap.set("n", "<C-n>", ":Neotree show toggle<CR>", {})
-        vim.keymap.set("n", "<C-b>", ":Neotree show toggle buffers<CR>", {})
+        vim.keymap.set("n", "<leader>n", ":Neotree focus<CR>", {})
+        vim.keymap.set("n", "<leader>b", ":Neotree focus buffers<CR>", {})
     end,
 }
