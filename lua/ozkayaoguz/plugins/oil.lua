@@ -21,7 +21,7 @@ return {
             },
             view_options = {
                 show_hidden = false,
-                is_hidden_file = function(name, bufnr)
+                is_hidden_file = function(name)
                     return (name ~= "..") and vim.startswith(name, ".")
                 end,
             },
