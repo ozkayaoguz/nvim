@@ -11,7 +11,7 @@ return {
 		harpoon:setup()
 		harpoon:extend(extensions.builtins.navigate_with_number())
 
-		vim.keymap.set("n", "<C-a>", function()
+		vim.keymap.set("n", "<M-h>", function()
 			harpoon:list():add()
 		end)
 		vim.keymap.set("n", "<leader>h", function()
