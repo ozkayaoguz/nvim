@@ -17,12 +17,12 @@ return {
 		vim.keymap.set("n", "<leader>h", function()
 			harpoon.ui:toggle_quick_menu(harpoon:list())
 		end)
-		vim.keymap.set("n", "<C-p>", function()
-			harpoon:list():prev()
-		end)
-		vim.keymap.set("n", "<C-n>", function()
-			harpoon:list():next()
-		end)
+		--vim.keymap.set("n", "<C-p>", function()
+		--	harpoon:list():prev()
+		--end)
+		--vim.keymap.set("n", "<C-n>", function()
+		--	harpoon:list():next()
+		--end)
 
 		harpoon:extend({
 			UI_CREATE = function(cx)
